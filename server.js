@@ -4,14 +4,17 @@ const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'deadpoolssfather@gmail.com',
-        pass: 'dssrkdcsswdeeseo'
+        // your email id  
+        user: '',
+        // your 2 fac auth generated password from gmail with 12 character
+        pass: ''
     }
 });
 
 // setup email data
 let mailOptions = {
-    from: 'deadpoolssfather@gmail.com',
+    // your email id 
+    from: '',
     to: 'shubhamd.gagare@gmail.com',
     subject: 'Subject line of the email',
     text: 'Email message text'
